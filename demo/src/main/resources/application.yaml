@@ -1,0 +1,7 @@
+grpc:
+  client:
+    port: 9091
+    hostname: localhost
+  product:
+    port: 9097
+    hostname: localhost

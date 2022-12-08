@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package ru.bodrov.mitap.product.grpc;
+
+option java_package = "ru.bodrov.mitap.demo.grpc";
+option java_multiple_files = true;
+
+message Product {
+  int32 id = 1;
+  string productName = 2;
+  bool isValid = 3;
+  string dateAdd = 4;
+}
+
+message ProductsRequest {
+}
+
+message ProductsResponse {
+  repeated Product product = 1;
+}
+
+service ProductService {
+  rpc GetAllProducts(ProductsRequest) returns (ProductsResponse);
+}
