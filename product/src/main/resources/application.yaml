@@ -1,0 +1,7 @@
+grpc:
+  server:
+    hostname: localhost
+    port: 9097
+
+server:
+  shutdown: graceful
